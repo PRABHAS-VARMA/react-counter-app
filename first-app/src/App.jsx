@@ -5,22 +5,22 @@ class App extends Component{
   constructor(){
     super();
     this.state={
-      count:0
+      value:0
     }
   }
   adding=()=>{
     this.setState({
-      count: this.state.count+1
+      value: this.state.value+1
     })
   }
   subtracting=()=>{
     this.setState({
-      count: this.state.count-1
+      value: this.state.value-1
     })
   }
   reset=()=>{
     this.setState({
-      count: 0
+      value: 0
     })
   }
   render(){
@@ -30,7 +30,7 @@ class App extends Component{
       <h1>Counter App</h1>
 
         <h2>Counter</h2>
-        <h1>{this.state.count}</h1>
+        <h1>{this.state.value}</h1>
         <div>
           <button onClick={this.adding}>+</button>
           <button onClick={this.subtracting}>-</button>
